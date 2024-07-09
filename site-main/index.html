@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Layout w/ Logo</title>
+</head>
+<body>
+
+<div id="logo-nav-div">
+  <div id="logo-div">
+    <img src="logo.png" alt="Logo" id="logo">
+  </div>
+  <div id="nav-div">
+    <nav id="nav-bar">
+      <a href="#home">Home</a>
+      <a href="#GameInfo">Game Info</a>
+      <a href="#Socials">Socials</a>
+      <a href="#playnow">Play Now</a>
+    </nav>
+  </div>
+</div>
+
+<div id="header-banner-div">
+  </video>
+</div>
+
+<div id="intro-text-area-div">
+</div>
+
+<div id="main-div" class="clearfix">
+  <div class="box">
+    <img src="" alt="">
+  </div>
+  <div class="box">
+    <img src="" alt="">
+  </div>
+  <div class="box">
+    <img src="" alt="">
+  </div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <h2>Sidebar</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#GameInfo">Game Info</a></li>
+    <li><a href="#Socials">Socials</a></li>
+    <li><a href="#playnow">Play Now</a></li>
+  </ul>
+</div>
+
+<div id="toggle-btn" onclick="toggleSidebar()">☰</div>
+
+<div id="footer-div">
+  <p>Footer content goes here</p>
+</div>
+
+<script>
+function toggleSidebar() {
+  var sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

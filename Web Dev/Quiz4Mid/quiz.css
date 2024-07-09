@@ -1,0 +1,132 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+#logo-nav-div {
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#logo-div {
+  width: 50px;
+  min-height: 50px;
+  background-color: white;
+  float: left;
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  max-height: 100px;
+}
+
+#nav-div {
+  min-height: 100px;
+  background-color: white;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2%;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#nav-bar a:hover {
+  color: red;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+ 
+#header-banner-div{
+  width: 100%;
+  min-height: 500px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-image: url('jabi5.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+
+#intro-text-area-div{
+  width: 100%;
+  min-height: 80px;
+  text-align: justify;
+  line-height: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#intro-text-area-div h1{
+text-align: center;
+min-height: 50px;
+}
+
+#main-div{
+  width: 100%;
+  min-height: 400px;
+}
+
+#main-div .box{
+  width: 30%;
+  min-height: 400px;
+  float: left;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+#main-div .box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#main-div .box:nth-child(2){
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#footer-div {
+  width: 100%;
+  min-height: 30px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#footer-logo {
+  max-height: 50px;
+  margin-right: 20px;
+}
+
+#footer-div p {
+  line-height: 1.5;
+}
+
+#wrapper-div{
+  width: 90%;
+  margin: auto;
+  background-color: red;
+}
