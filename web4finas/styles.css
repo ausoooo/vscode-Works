@@ -1,15 +1,13 @@
-/* Global styles */
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490097089/bg_ftta6d.png");
+  background-image: url("");
   color: #49130c;
 }
 
-/* Navbar styles */
 .navbar {
   min-height: 80px;
   background-color: #fbdcad;
@@ -80,18 +78,6 @@ body {
   opacity: 0.9;
 }
 
-.img-thumbnail {
-  border-color: #fff;
-  border-width: 12px;
-  width: 100%;
-}
-
-.img-circle {
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-
 #carousel {
   margin-top: 20px;
 }
@@ -117,24 +103,21 @@ body {
 footer {
   background-color: #fbdcad;
   padding: 40px 0;
+  text-align: center; 
 }
 
-#footer1,
-#footer2,
-#footer3 {
-  text-align: left;
-  padding-left: 90px;
-  color: black;
+footer h1, footer ul, footer li {
+  text-align: center; 
+  padding-left: 0; 
 }
 
 .footer-links {
-  text-align: left;
-  padding-left: 90px;
-  color: #000;
+  list-style-type: none;
+  padding: 0;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 50px;
+  padding: 0;
 }
