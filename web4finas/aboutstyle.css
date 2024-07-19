@@ -4,8 +4,44 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url();
+  background-color: #F6EED8;
   color: #49130c;
+}
+
+.sidebar {
+  position: fixed;
+  top: 250px;
+  background-color: #fbdcad;
+  width: 60px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 500; 
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons a {
+  margin: 15px 0;
+  color: black;
+  font-size: 30px;
+}
+
+.icons a:hover {
+  color: white; 
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .navbar {
@@ -47,7 +83,7 @@ body {
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .open > a {
-  background-color: #e6637f;
+  background-color: #d2b48c;
 }
 
 .navbar-default .navbar-nav > .active > a:hover,
@@ -78,23 +114,10 @@ body {
   opacity: 0.9;
 }
 
-.img-thumbnail {
-  border-color: #fff;
-  border-width: 12px;
-  width: 100%;
-}
-
-.img-circle {
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-
-.image-right {
-  float: right;
-  margin: 0 0 20px 20px;
-  width: 200px; /* Adjust this value as needed */
-  height: auto;
+.container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
@@ -107,4 +130,66 @@ ul {
   list-style-type: none;
   margin: 0;
   padding-left: 50px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: whitesmoke;
+  padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.footer .text-center p {
+  font-size: 15px;
+  color: #666;
+}
+
+.footer .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .col-sm-4 {
+  flex: 1;
+  padding: 10px;
+  max-width: 33.33%;
+  box-sizing: border-box;
+}
+
+.footer .col-sm-12 {
+  width: 100%;
 }

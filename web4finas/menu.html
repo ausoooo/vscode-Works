@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Menu - Baking Tito</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="menu.js"></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="icons">
+      <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="https://www.google.com" target="_blank"><ion-icon name="logo-google"></ion-icon></a>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Baking Tito Logo" class="logo-img">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="menu.html">Menu</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#cartModal"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>Our Recipe Menu</h1>
+        <p>Discover our delicious recipes, made with the finest ingredients.</p>
+      </div>
+    </div>
+
+    <div class="row menu-category">
+      <div class="col-sm-12">
+        <h2>Cakes</h2>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="chocolate.jfif" alt="Chocolate Cake" class="menu-img">
+          <h3>Chocolate Cake</h3>
+          <p>Rich and moist chocolate cake topped with creamy chocolate ganache.</p>
+          <button class="btn btn-primary get-recipe" data-item="Chocolate Cake">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Chocolate Cake" data-price="20">Buy ($20)</button>
+        </div>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="vanilla.jfif" alt="Vanilla Cake" class="menu-img">
+          <h3>Vanilla Cake</h3>
+          <p>Classic vanilla cake with a light and fluffy buttercream frosting.</p>
+          <button class="btn btn-primary get-recipe" data-item="Vanilla Cake">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Vanilla Cake" data-price="18">Buy ($18)</button>
+        </div>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="redvelcake.jfif" alt="Red Velvet Cake" class="menu-img">
+          <h3>Red Velvet Cake</h3>
+          <p>Delicious red velvet cake with cream cheese frosting.</p>
+          <button class="btn btn-primary get-recipe" data-item="Red Velvet Cake">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Red Velvet Cake" data-price="22">Buy ($22)</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row menu-category">
+      <div class="col-sm-12">
+        <h2>Pastries</h2>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="croissant.jfif" alt="Croissant" class="menu-img">
+          <h3>Croissant</h3>
+          <p>Flaky and buttery croissant, perfect for breakfast or a snack.</p>
+          <button class="btn btn-primary get-recipe" data-item="Croissant">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Croissant" data-price="3">Buy ($3)</button>
+        </div>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="eclair.jfif" alt="Éclair" class="menu-img">
+          <h3>Éclair</h3>
+          <p>Choux pastry filled with creamy custard and topped with chocolate glaze.</p>
+          <button class="btn btn-primary get-recipe" data-item="Éclair">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Éclair" data-price="4">Buy ($4)</button>
+        </div>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="danish.jfif" alt="Danish" class="menu-img">
+          <h3>Danish</h3>
+          <p>Sweet and soft Danish pastry with a variety of fruit fillings.</p>
+          <button class="btn btn-primary get-recipe" data-item="Danish">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Danish" data-price="3.5">Buy ($3.5)</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row menu-category">
+      <div class="col-sm-12">
+        <h2>Breads</h2>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="Sourdough Bread.jfif" alt="Sourdough Bread" class="menu-img">
+          <h3>Sourdough Bread</h3>
+          <p>Artisan sourdough bread with a crispy crust and soft interior.</p>
+          <button class="btn btn-primary get-recipe" data-item="Sourdough Bread">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Sourdough Bread" data-price="6">Buy ($6)</button>
+        </div>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="baguette.jfif" alt="Baguette" class="menu-img">
+          <h3>Baguette</h3>
+          <p>Traditional French baguette, perfect for sandwiches or as a side.</p>
+          <button class="btn btn-primary get-recipe" data-item="Baguette">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Baguette" data-price="2.5">Buy ($2.5)</button>
+        </div>
+      </div>
+      <div class="col-sm-4 menu-item">
+        <div class="menu-content">
+          <img src="bread.jpg" alt="Whole Wheat Bread" class="menu-img">
+          <h3>Whole Wheat Bread</h3>
+          <p>Healthy whole wheat bread, great for sandwiches and toast.</p>
+          <button class="btn btn-primary get-recipe" data-item="Whole Wheat Bread">Get Recipe</button>
+          <button class="btn btn-success buy-item" data-item="Whole Wheat Bread" data-price="5">Buy ($5)</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="cartModalLabel">Your Cart</h4>
+        </div>
+        <div class="modal-body">
+          <ul id="cart-items" class="list-group"></ul>
+          <p id="cart-total" class="text-right"><strong>Total: $0</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Shop online</h4>
+          <p>Grab & Go In-store Pick Up<br>Order Baked Goods<br>Get Recipes</p>
+        </div>
+        <div class="col-sm-4">
+          <h4>Contact Us</h4>
+          <p>123 lorem ipsum<br>Ipsum Lorem, LI 12345<br>Phone: (123) 456-7890<br>Email: info@bakingtito.com</p>
+        </div>
+        <div class="col-sm-4">
+          <h4>Our Menu</h4>
+          <ul class="footer-links">
+            <li>Explore our menu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p>&copy; 2024 Baking Tito. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> 
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -7,8 +7,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> 
 </head>
 <body>
+
+  <div class="sidebar">
+    <div class="icons">
+      <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="https://www.google.com" target="_blank"><ion-icon name="logo-google"></ion-icon></a>
+    </div>
+  </div>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -26,12 +36,12 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#">Menu</a></li>
+        <li><a href="menu.html">Menu</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="signup.html">Sign Up</a></li>
         <li><a href="login.html">Log In</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#cartModal"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
   </div>
@@ -46,7 +56,7 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="panel">
-        <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490170457/apple-and-almond-cake_i12bux.jpg" class="img-thumbnail" alt="Cake Image">
+        <img src="almond.jpg" class="img-thumbnail" alt="Cake Image">
         <div class="box">
           <h1>Cakes</h1>
         </div>
@@ -54,7 +64,7 @@
     </div>
     <div class="col-sm-4">
       <div class="panel">
-        <a href="#"><img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490245951/gluten-free-bread-rolls-nut-free-bread-rolls-pale-pete-recipes-paleo-way-seed-rolls_lthh5a.jpg" class="img-thumbnail" alt="Gluten Free Bread Image"></a>
+        <a href="#"><img src="balls.jpg" class="img-thumbnail" alt="Gluten Free Bread Image"></a>
         <div class="box">
           <h1>Gluten free</h1>
         </div>
@@ -62,7 +72,7 @@
     </div>
     <div class="col-sm-4">
       <div class="panel">
-        <a href="#"><img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490245830/Gluten_Free_Bread_6_-_Copy_rtbcqq.jpg" class="img-thumbnail" alt="Bread Image"></a>
+        <a href="#"><img src="bread.jpg" class="img-thumbnail" alt="Bread Image"></a>
         <div class="box">
           <h1>Bread</h1>
         </div>
@@ -78,17 +88,17 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490351456/carousel1.jpg" alt="Carousel Image">
+      <img src="muffin.jpg" alt="Carousel Image">
       <div class="carousel-caption">
         <h3>100% Homemade</h3>
         <p>We make pastries at home using 100% natural ingredients</p>
       </div>
     </div>
     <div class="item">
-      <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490276719/carousel2_zxje9g.jpg" alt="Carousel Image">
+      <img src="pie.jpg" alt="Carousel Image">
       <div class="carousel-caption">
-        <h3>Make order</h3>
-        <p>Call us and we will deliver fresh pastries to your home</p>
+        <h3>Follow Recipe</h3>
+        <p>Bake your own pastries by following this recipes</p>
       </div>
     </div>
   </div>
@@ -102,27 +112,28 @@
   </a>
 </div>
 
-<footer class="container-fluid text-center">
-  <div class="row">
-    <div class="col-sm-4">
-      <h1>Shop online</h1>
-      <ul class="footer-links">
-        <li>Grab & Go In-store Pick Up</li>
-        <li>Order Baked Goods</li>
-      </ul>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Shop online</h4>
+        <p>Grab & Go In-store Pick Up<br>Order Baked Goods<br>Get Recipes</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>Contact Us</h4>
+        <p>123 lorem ipsum<br>Ipsum Lorem, LI 12345<br>Phone: (123) 456-7890<br>Email: info@bakingtito.com</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>Our Menu</h4>
+        <ul class="footer-links">
+          <li>Explore our menu</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <h1>Our menu</h1>
-      <ul class="footer-links">
-        <li>Explore our menu</li>
-      </ul>
-    </div>
-    <div class="col-sm-4">
-      <h1>About</h1>
-      <ul class="footer-links">
-        <li>FAQs</li>
-        <li>Store policy</li>
-      </ul>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <p>&copy; 2024 Baking Tito. All rights reserved.</p>
+      </div>
     </div>
   </div>
 </footer>

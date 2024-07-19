@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("");
+  background-color: #F6EED8;
   color: #49130c;
 }
 
@@ -47,7 +47,7 @@ body {
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .open > a {
-  background-color: #e6637f;
+  background-color: #d2b48c;
 }
 
 .navbar-default .navbar-nav > .active > a:hover,
@@ -66,7 +66,7 @@ body {
 }
 
 .form {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+  background: #d6ac87;
   border-radius: 10px;
   padding: 25px;
   color: #fff;
@@ -81,7 +81,7 @@ body {
 .form h2 {
   width: 100%;
   text-align: center;
-  color: #ff7200;
+  color: black;
   font-size: 22px;
   background-color: #fff;
   border-radius: 10px;
@@ -93,7 +93,7 @@ body {
   width: 100%;
   height: 35px;
   background: transparent;
-  border-bottom: 1px solid #ff7200;
+  border-bottom: 1px solid white;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -114,7 +114,7 @@ body {
 .btnn {
   width: 100%;
   height: 40px;
-  background: #ff7200;
+  background: #ffffff;
   border: none;
   margin-top: 30px;
   font-size: 18px;
@@ -137,7 +137,7 @@ body {
 
 .form .link a {
   text-decoration: none;
-  color: #ff7200;
+  color: black;
 }
 
 .liw {
